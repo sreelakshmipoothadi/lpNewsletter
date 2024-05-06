@@ -1,94 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-	
-	<style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-        img {
-			
-            display: block;
-            width: 50%; /* Set image width to 100% of viewport width */
-            height: auto; /* Maintain aspect ratio */
-        }
-		.heading{
-			color: #F6862E
-		}
-		
-		.contents{
-			color: #FFFFFF;
-			margin-left: 100px;
-			margin-right: 100px;
-			text-align: justify;
-		}
-		
-		.button {
-    background-color: orange;
-    color: "#1D1D1D";
-    padding: 15px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: darkorange;
-}
-
-		
-		
-	</style>
-		
+<title>Launchpad Kerala 2024</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+        background-color: #1D1D1D;
+        color: #FFFFFF;
+        line-height: 1.6;
+    }
+    img.logo {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    }
+    h1.heading {
+        color: #F6862E;
+        text-align: center;
+        margin-top: 30px;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .contents {
+        margin: 0 100px;
+        text-align: justify;
+    }
+    .button {
+        background-color: orange;
+        color: #FFFFFF;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .button:hover {
+        background-color: darkorange;
+    }
+</style>
 </head>
+<body>
+<div align="center">
+    <img src="images/Launchpad Kerala Logo.png" class="logo">
+</div>
+<div>
+    <div class="heading">
+        <h1>Introduction</h1>
+    </div>
+    <div class="contents">
+        Launchpad Kerala 2024, a collaboration between IEEE Kerala Section and GTech MuLearn, is a prestigious job fair aimed at creating opportunities for engineering students and graduates in Kerala. The event features a rigorous assessment process including technical challenges and online tests to evaluate candidates' skills. Selected candidates can choose interview locations in Trivandrum, Kochi, or Kozhikode, simplifying the hiring process for companies. The event offers access to a diverse talent pool from across Kerala, providing companies with top-tier candidates for various roles.
+    </div>
+    <div class="heading">
+        <h1>Call for Action</h1>
+    </div>
+    <div class="contents">
+        Join Launchpad Kerala 2024 for an unparalleled opportunity to kickstart your career journey! This premier job fair, organized by IEEE Kerala Section and GTech MuLearn, offers a platform where engineering students and graduates can connect with top companies and industry professionals. By participating, you gain access to networking opportunities that could lead to internships, co-op placements, or future employment. Moreover, you'll get valuable industry insights, learning about the latest trends and technologies directly from experts. The event also exposes you to diverse career paths, helping you explore new possibilities and find the perfect fit for your skills and interests. Additionally, participating in Launchpad Kerala 2024 is a transformative experience that fosters personal growth, pushing you to embrace new challenges and develop key skills like resilience, adaptability, and self-confidence. Don't miss out on this chance to shape your future!<br><br>
+        <a href="https://mulearn.org/launchpad" class="button"><b>Join Now</b></a>
+    </div>
+    <div class="heading">
+        <h1>Latest Updates</h1>
+    </div>
+    <div class="contents">
+        We are thrilled to announce a major milestone for Launchpad Kerala 2024: over 10,000 engineering students have registered to attend! This remarkable response underscores the event's significance as a premier job fair, organized by IEEE Kerala Section and GTech MuLearn. With such a large turnout, attendees will have unparalleled opportunities to network with professionals, explore internships, and gain insights into industry trends. Don't miss this chance to connect with top companies and kickstart your career journey at Launchpad Kerala 2024!
+    </div>
+    <div class="heading">
+        <h1>Launchpad Kerala 2024 Roadmap</h1>
+    </div>
+    <div class="contents">
+        <ol>
+            <li>Participant Registration</li>
+            <li>Company Registration Close</li>
+            <li>Challenge Start</li>
+            <li>Online Exam</li>
+            <li>Consolidated Rank List</li>
+            <li>Option Selection</li>
+            <li>Confirmed Mail to Selected Participants</li>
+            <li>Interviews</li>
+        </ol>
+    </div>
+</div>
+<script>
+    window.addEventListener('scroll', () => {
+        const headings = document.querySelectorAll('.heading');
+        headings.forEach(heading => {
+            if (isElementInViewport(heading) && heading.style.opacity !== '1') {
+                heading.style.opacity = '1';
+                heading.style.transform = 'translateY(0)';
+            }
+        });
 
-<body bgcolor="#1D1D1D">
-	<div align="center">
-		<img src="images/Launchpad Kerala Logo.png" class="logo">
-	</div>
-	
-	<div>
-		<div class="heading">
-			<h1 align="center">Introduction</h1>
-		</div>
-		<div class="contents">
-			Launchpad Kerala 2024, a collaboration between IEEE Kerala Section and GTech MuLearn, is a prestigious job fair aimed at creating opportunities for engineering students and graduates in Kerala. The event features a rigorous assessment process including technical challenges and online tests to evaluate candidates' skills. Selected candidates can choose interview locations in Trivandrum, Kochi, or Kozhikode, simplifying the hiring process for companies. The event offers access to a diverse talent pool from across Kerala, providing companies with top-tier candidates for various roles.
-		</div>
-		
-		
-		<div class="heading">
-			<h1 align="center">Call for Action</h1>
-		</div>
-		<div class="contents">
-			Join Launchpad Kerala 2024 for an unparalleled opportunity to kickstart your career journey! This premier job fair, organized by IEEE Kerala Section and GTech MuLearn, offers a platform where engineering students and graduates can connect with top companies and industry professionals. By participating, you gain access to networking opportunities that could lead to internships, co-op placements, or future employment. Moreover, you'll get valuable industry insights, learning about the latest trends and technologies directly from experts. The event also exposes you to diverse career paths, helping you explore new possibilities and find the perfect fit for your skills and interests. Additionally, participating in Launchpad Kerala 2024 is a transformative experience that fosters personal growth, pushing you to embrace new challenges and develop key skills like resilience, adaptability, and self-confidence. Don't miss out on this chance to shape your future!<br><br>
-			<a href=https://mulearn.org/launchpad>
-                    <button class="button"><b>Join Now</b></button></a>
-		</div>
-		
-		<div class="heading">
-			<h1 align="center">Latest Updates</h1>
-		</div>
-		<div class="contents">
-			We are thrilled to announce a major milestone for Launchpad Kerala 2024: over 10,000 engineering students have registered to attend! This remarkable response underscores the event's significance as a premier job fair, organized by IEEE Kerala Section and GTech MuLearn. With such a large turnout, attendees will have unparalleled opportunities to network with professionals, explore internships, and gain insights into industry trends. Don't miss this chance to connect with top companies and kickstart your career journey at Launchpad Kerala 2024!<br><br><br>
-		</div>
-		
-		<div class="heading">
-			<h1 align="center">Launchpad Kerala 2024 Roadmap</h1>
-		</div>
-		<div class="contents">
-			<ol>
-        <li>Register for Launchpad Kerala 2024 and gain access to exclusive networking opportunities.</li>
-        <li>Participate in industry talks and gain insights into the latest trends and technologies.</li>
-        <li>Engage with representatives from diverse companies and explore various career paths.</li>
-        <li>Challenge yourself with our rigorous assessment process and enhance your skills.</li>
-        <li>Unlock opportunities for internships, co-op placements, and future employment.</li>
-    </ol>
-		</div>
-		
-	</div>
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => {
+            if (isElementInViewport(button) && button.style.opacity !== '1') {
+                button.style.opacity = '1';
+                button.style.transform = 'translateY(0)';
+            }
+        });
+    });
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+</script>
 </body>
 </html>
+
